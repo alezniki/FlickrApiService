@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Front End Assignment</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css">
+</head>
+<body ng-app="flickr-api">
+
+	<div class="container-fluid">
+		<div class="row" ui-view="header"></div>
+		<div class="row" ui-view="content"></div>
+	</div>		
+        	
+	<!-- bower_components -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
+	
+	<!-- app module -->
+	<script src="app/app.module.js"></script>
+	
+	<!-- core module -->
+	<script src="app/components/core/js/core.module.js"></script>	
+	<script src="app/components/core/js/core.route.js"></script>	
+	<script src="app/components/core/js/core.init.js"></script>
+
+	<!-- main module -->
+	<script src="app/components/main/js/flickr.module.js"></script>	
+	<script src="app/components/main/js/flickr.route.js"></script>	
+	<script src="app/components/main/js/flickr.init.js"></script>
+	<script src="app/components/main/js/flickr.service.js"></script>
+	
+	<!-- controllers -->
+	<script src="app/components/main/js/controllers/recent-photo.controller.js"></script>	
+	<script src="app/components/main/js/controllers/search-photo.controller.js"></script>
+	<!-- <script src="app/components/main/js/controllers/lightbox.controller.js"></script> -->
+</body>
+</html>

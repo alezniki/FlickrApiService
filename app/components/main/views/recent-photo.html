@@ -1,0 +1,7 @@
+<div class="container-fluid">
+	<div class="col-sm-12 col-md-4" ng-repeat="photo in rpc.photos">
+		<a ng-click="rpc.openLightboxModal(photo.id, $index)" >
+     		<img class="img-thumbnail" ng-src="{{photo.url_m}}"/>
+     	</a>
+	</div>
+</div>

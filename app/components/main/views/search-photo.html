@@ -1,0 +1,23 @@
+<div class="container-fluid"> 
+	
+	<form role="form" name='form'>
+		<div class="form-group">
+		    <input ng-model="spc.textSearch" type="text" placeholder="Enter some text"/> 
+		    <button class="btn btn-info" type="submit" ng-click="spc.searchByText()">Search by Text</button>
+			
+		    <input ng-model="spc.tagSearch" type="text" placeholder="Enter tags"/> 
+		    <button class="btn btn-info"  type="submit" ng-click="spc.searchByTag()">Search by Tag</button><br>
+
+		    <div ng-repeat="tag in spc.tags" class="checkbox-inline"> 
+				<input type="checkbox" id="checkbox_{{$index}}" ng-change="spc.searchByCheckedTag(tag._content,$index)" ng-model="tag.checked"/>
+				<label for="checkbox_{{$index}}">{{tag._content}}</label>	
+			</div>
+		</div>     
+	</form>
+
+	<div class="col-sm-12 col-md-4" ng-repeat="photo in spc.photos">
+		<a ng-click="spc.openLightboxModal(photo.id, $index)">
+			<img class="img-thumbnail" ng-src="{{photo.url_m}}"/>
+		</a>
+	</div>
+</div>

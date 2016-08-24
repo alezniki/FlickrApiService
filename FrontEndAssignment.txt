@@ -1,0 +1,9 @@
+The application should retrieve recent images uploaded to Flickr and display them as thumbnails in a grid on the home screen.
+Clicking on an image displays that image on the page in actual size; with image tags and user comments  retrieved from Flickr and displayed below the image.
+
+Implement search screen for searching photos on Flickr. Search results are displayed as thumbnails, in the same grid as recent images.
+Clicking on search result also displays the image on the screen, with tags and user comments.
+It should be possible to search by text and/or by tags.
+
+User interface element for text search should be a text field where search keywords can be entered.
+User interface for tag search should be checkboxes with hot tags retrieved from API for the past one week, with additional input field to enter custom tag by which to search for images. It should be possible to search by text, by tags and both by text and tags.

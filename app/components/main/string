@@ -1,0 +1,3 @@
+https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=dc29c800c34e2955c179219f36bc7d83&tags=focuspocus&format=json&nojsoncallback=1 //flickr method
+
+https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5d32484cd85d87c6e477693e3d62885a&tags=focuspocus&text=undefined&extras=tags,url_m,url_o&format=json&nojsoncallback=? // iz networka
