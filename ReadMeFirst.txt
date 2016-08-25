@@ -5,7 +5,4 @@ Install node.js server and then type
 Type 'http://localhost:8080' in your web browser to start application.
 
 
-NOTE:
-
-
 
